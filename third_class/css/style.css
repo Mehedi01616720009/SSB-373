@@ -1,0 +1,224 @@
+* {margin: 0px; padding: 0px;}
+
+.hdr {
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    display: block;
+}
+
+.logo {
+    float: left;
+    position: relative;
+    padding-left: 5%;
+    display: inline-block;
+    color: #fff;
+    height: 100px;
+    line-height: 100px;
+    font-size: 35px;
+}
+
+.menu {
+    float: right;
+    position: relative;
+    display: inline-block;
+    padding-right: 5%;
+    color: #fff;
+    height: 100px;
+    line-height: 100px;
+    font-size: 20px;
+}
+
+.cntnt {
+    width: 100%;
+    display: block;
+}
+
+.imgs {
+    width: 100%;
+    display: block;
+    background-color: #ccc;
+}
+
+.imgs div {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    line-height: 400px;
+    font-size: 60px;
+    color: #222;
+}
+
+.mn_cnt {
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+}
+
+.container {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.cnt {
+    width: 60%;
+    display: inline-block;
+    height: 200px;
+    background-color: aqua;
+}
+
+.cnt h1 {
+    font-size: 40px;
+    font-family: arial;
+    margin-bottom: 10px;
+    margin: 30px 5% 10px 5%;
+}
+
+.cnt p {
+    font-size: 16px;
+    font-family: arial;
+    line-height: 18px;
+    margin: 0px 5% 20px 5%;
+}
+
+.nws {
+    width: 39%;
+    height: 200px;
+    display: inline-block;
+    background-color: #444;
+}
+
+.nws h1 {
+    font-size: 40px;
+    font-family: arial;
+    margin: 30px 5% 10px 5%;
+}
+
+.nws p {
+    font-size: 16px;
+    font-family: arial;
+    line-height: 18px;
+    margin: 0px 5% 20px 5%;
+}
+
+.sb_cnt {
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+}
+
+.sb_container {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.sb_cnts:first-child {
+    margin-left: 0px;
+}
+
+.sb_cnts {
+    width: 30%;
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    margin-left: 4%;
+}
+
+.sb_cnts h1 {
+    font-size: 40px;
+    font-family: arial;
+    margin-bottom: 10px;
+    margin: 30px 5% 10px 5%;
+}
+
+.sb_cnts p {
+    font-size: 16px;
+    font-family: arial;
+    line-height: 18px;
+    margin: 0px 5% 20px 5%;
+}
+
+.clnt_cnt {
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+}
+
+.clnt_cnts {
+    width: 100%;
+    height: 170px;
+    display: block;
+    background-color: #333;
+    padding-top: 20px;
+    color: #eee;
+}
+
+.clnt_cnts h1 {
+    font-size: 40px;
+    font-family: arial;
+    margin-bottom: 10px;
+    margin: 30px 5% 10px 5%;
+}
+
+.clnt_cnts p {
+    font-size: 16px;
+    font-family: arial;
+    line-height: 18px;
+    margin: 0px 5% 20px 5%;
+}
+
+.othr_cnt {
+    width: 100%;
+    display: block;
+    margin-top: 30px;
+}
+
+.othr_cnts {
+    width: 100%;
+    height: 200px;
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.othr_cnts h1 {
+    font-size: 50px;
+    font-family: arial;
+    color: blue;
+    margin-bottom: 10px;
+    margin: 30px 5% 10px 5%;
+}
+
+.othr_cnts p {
+    font-size: 25px;
+    font-family: arial;
+    color: green;
+    line-height: 30px;
+    margin: 0px 5% 20px 5%;
+}
+
+.ftr {
+    width: 100%;
+    height: 150px;
+    display: block;
+    background-color: #111;
+    color: #fff;  
+}
+
+.ft_des {
+    font-size: 18px;
+    font-family: arial;
+    color: #eee;
+    width: 100%;
+    text-align: center;
+    line-height: 150px;
+}
+
+.ft_des a {
+    text-decoration: none;
+    color: aqua;
+}
