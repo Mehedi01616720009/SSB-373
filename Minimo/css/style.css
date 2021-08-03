@@ -1,0 +1,279 @@
+*{margin: 0; padding: 0;}
+
+header{
+
+width: 100%;
+
+margin-top: 15px;
+}
+header .header_container{
+
+width: 95%;
+
+margin: auto;
+
+overflow: hidden;
+}
+header .header_container .logo{float: left;}
+header .header_container .logo img{
+
+width: 150px;
+}
+header .header_container nav{float: right;}
+header .header_container nav ul{
+    
+list-style: none;
+    
+overflow: hidden;
+}
+header .header_container nav ul li{
+    
+padding: 0px 50px;
+    
+float: left;
+}
+header .header_container nav ul li a{
+    
+text-decoration: none;
+    
+line-height: 50px;
+    
+background-color: #FAFAFA;
+    
+color: #555;
+}
+section{
+
+margin-top: 30px;
+}
+section .feature_container{
+
+width: 95%;
+
+margin: auto;
+}
+section .feature_container img{
+    
+width: 100%;
+}
+.txt-container{width: 85%;margin: auto;margin-top: 90px;}
+.txt-container .caption{
+    
+font-size: 15px;
+    
+color: #555;
+    
+background-color: #FAFAFA;
+    
+display: table-caption;
+    
+font-family: arial;
+}
+.txt-container h1{
+
+font-size: 40px;
+
+margin-top: 30px;
+
+color: #555;
+
+background-color: #FAFAFA;
+
+display: table;
+
+font-weight: lighter;
+}
+.txt-container .content{
+
+font-size: 17px;
+
+margin-top: 40px;
+
+color: #555;
+
+background-color: #FAFAFA;
+
+display: inline-block;
+}
+.txt-container form{
+
+margin-top: 50px;
+}
+.txt-container form textarea{
+
+border: none;
+
+background-color: #FAFAFA;
+}
+.content_container{
+
+width: 100%;
+
+margin-top: 120px;
+}
+.content_container .content_1{
+
+width: 45%;
+
+margin-right: 4%;
+
+display: inline-block;
+}
+.content_container .content_1 img{
+    
+width: 100%;
+    
+margin-bottom: 30px;
+}
+.content_container .content_2{
+
+width: 45%;
+
+display: inline-block;
+
+margin-left: 5%;
+}
+.content_container .content_2 img{
+    
+width: 100%;
+    
+margin-bottom: 30px;
+}
+.sign_up{
+
+text-align: center;
+
+margin-top: 120px;
+
+padding: 60px 0px;
+
+background-color: #F0F0F0;
+}
+.sign_up h1{
+
+font-size: 40px;
+
+font-weight: lighter;
+
+color: #333;
+}
+.sign_up form{
+
+margin-top: 70px;
+
+overflow: hidden;
+}
+.sign_up form .form_content{
+
+overflow: hidden;
+
+width: 450px;
+
+margin: auto;
+}
+.sign_up form .form_content input{
+
+width: 400px;
+
+border: none;
+
+background-color: #F0F0F0;
+
+border-bottom: 2px solid #333;
+
+font-family: serif;
+
+font-size: 17px;
+
+line-height: 30px;
+
+float: left;
+}
+.sign_up form .form_content button{
+    
+width: 50px;
+
+border: none;
+
+background-color: #F0F0F0;
+
+border-bottom: 2px solid #333;
+
+font-family: serif;
+
+font-size: 17px;
+
+line-height: 30px;
+
+float: left;
+}
+.txt-container .btn{
+    
+text-align: center;
+    
+margin-top: 110px;
+}
+.txt-container .btn button{
+    
+width: 160px;
+    
+background-color: #fff;
+    
+color: #333;
+    
+font-family: serif;
+    
+font-size: 24px;
+    
+padding: 10px 15px;
+    
+border: 2px solid #444;
+}
+footer{
+
+background-color: #F0F0F0;
+
+margin-top: 100px;
+
+padding: 40px 0px;
+}
+footer .foot_container{
+
+width: 80%;
+
+margin: auto;
+
+overflow: hidden;
+}
+footer .foot_container .left_foot{
+
+float: left;
+}
+footer .foot_container .right_foot{
+
+float: right;
+}
+footer .foot_container .left_foot p{
+
+display: inline-block;
+
+color: #444;
+}
+footer .foot_container .left_foot span{
+
+display: inline-block;
+
+color: #444;
+}
+footer .foot_container .right_foot p{
+
+display: inline-block;
+
+color: #444;
+}
+footer .foot_container .right_foot span{
+    
+margin-left: 15px;
+    
+font-size: 17px;
+}
