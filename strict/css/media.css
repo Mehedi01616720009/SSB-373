@@ -1,0 +1,131 @@
+@media(max-width:426px) and (min-width:0px){
+    .navbar-light .navbar-nav .nav-link{
+        font-size: 14px;
+    }
+    .hght{
+        min-height: 80vh;
+    }
+    .banner_section h1{
+        font-size: 70px;
+    }
+    .banner_section p{
+        font-size: 15px;
+    }
+    .text_section h1{
+        font-size: 28px;
+    }
+    .text_section p{
+        font-size: 14px;
+        text-align: justify;
+        padding: 0px 10px;
+    }
+    .feature h2{
+        font-size: 18px;
+    }
+    .feature p{
+        font-size: 13px;
+    }
+    .show_case h1{
+        font-size: 26px;
+    }
+    .show_case p{
+        font-size: 13px;
+    }
+    .form_sheet h1{
+        font-size: 30px;
+    }
+    .form_sheet p{
+        font-size: 13px;
+    }
+    .form-control{
+        padding: 5px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width:769px) and (min-width:427px){
+    .navbar-light .navbar-nav .nav-link{
+        font-size: 15px;
+    }
+    .hght{
+        min-height: 80vh;
+    }
+    .banner_section h1{
+        font-size: 90px;
+    }
+    .banner_section p{
+        font-size: 17px;
+    }
+    .text_section h1{
+        font-size: 35px;
+    }
+    .text_section p{
+        font-size: 17px;
+        text-align: justify;
+        padding: 0px 10px;
+    }
+    .feature h2{
+        font-size: 20px;
+    }
+    .feature p{
+        font-size: 16px;
+    }
+    .icon_panal{
+        width: 50%;
+    }
+    .show_case h1{
+        font-size: 33px;
+    }
+    .show_case p{
+        font-size: 15px;
+    }
+    .panal_custom{
+        width: 50%;
+    }
+    .form_sheet h1{
+        font-size: 35px;
+    }
+    .form_sheet p{
+        font-size: 15px;
+    }
+    .form_overflow{
+        width: 90%;
+    }
+    .form_overflow span{
+        font-size: 16px;
+    }
+}
+@media(max-width:995px) and (min-width:770px){
+    .banner_section h1{
+        font-size: 100px;
+    }
+    .form_overflow{
+        width: 90%;
+    }
+}
+@media(max-width:768px) and (min-width:0px){
+    .form_sheet input[type="submit"]{
+        font-size: 16px;
+    }
+    .form-custom:nth-child(1){
+        justify-content: center;
+    }
+    .form-custom:nth-child(2){
+        justify-content: center;
+    }
+    .copy{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    footer ul{
+        justify-content: center;
+    }
+}
+@media(max-width:770px) and (min-width:769px){
+    .form_sheet input[type="checkbox"]{
+        margin: 14px 0px;
+    }
+    .form_sheet span{
+        font-size: 13px;
+    }
+}
