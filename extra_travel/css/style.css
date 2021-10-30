@@ -1,0 +1,652 @@
+/*=============== VARIABLE CSS ==================*/
+:root {
+    --header-height: 4.5rem;
+
+    /*=============== COLORS ==================*/
+    /* HSL color mode */
+    --first-color : #E76F51;
+    --first-color-second : #E76F51;
+    --first-color-alt : #FF8A6C;
+    --link-color: #FFB63B;
+    --text-color : #3B3735;
+    --text-color-light : #8D8D8D;
+    --input-color : #fff;
+    --body-color : #FAF4F2;
+    --body-color-alt: #FFD2C6;
+    --footer-color: #F8E1DB; 
+
+    /*=============== FONTS ==================*/
+    --body-font: 'Roboto', sans-serif;
+    --title-font: 'Archivo', sans-serif;
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+
+    /*=============== FONTS WEIGHT ==================*/
+    --font-medium: 500;
+    --font-bold: 700;
+
+    /*=============== MARGINS BOTTOM ==================*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-25: 1.25rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+
+    /*=============== Z INDEX ==================*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+    /*=============== HOVER OVERLAY ==================*/
+    --img-transition: .3s;
+    --img-hidden: hidden;
+    --img-scale: scale(1.1);
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --biggest-font-size: 4rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.75rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 0.875rem;
+        --smaller-font-size: 0.813rem;
+    }
+}
+
+/*=============== VARIABLE DARK ==================*/
+body.dark-theme{
+    /* HSL color mode */
+    --first-color-second : hsl(var(--hue-color), 54%, 12%);
+    --title-color : hsl(var(--hue-color), 24%, 95%);
+    --text-color : hsl(var(--hue-color), 8%, 75%);
+    --input-color : hsl(var(--hue-color), 29%, 16%);
+    --body-color : hsl(var(--hue-color), 29%, 12%);
+}
+
+/*=============== BUTTON DARK LIGHT ==================*/
+.nav_dark{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    position: absolute;
+    left: 3rem;
+    bottom: 4rem;
+}
+
+.change-theme,
+.change-theme-name{
+    color: var(--text-color);
+}
+
+.change-theme{
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.change-theme-name{
+    font-size: var(--small-font-size);
+}
+
+/*=============== BASE ==================*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+h1, h2, h3{
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    font-family: var(--title-font);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+button, input {
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+button{
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+}
+
+/*=============== REUSABLE CSS CLASSES ==================*/
+.section {
+    padding: 4.5rem 0 2.5rem;
+}
+
+.section_title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: var(--mb-2);
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/*=============== HEADER ==================*/
+.header{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: var(--z-fixed);
+    background-color: transparent;
+}
+
+/*=============== NAV ==================*/
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo,
+.nav_toggle{
+    color: #fff;
+}
+
+.nav_logo{
+    font-weight: var(--font-semi-bold);
+}
+
+.nav_toggle{
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: var(--mb-0-75);
+}
+
+.nav_menu{
+    position: relative;
+}
+
+@media screen and (max-width: 904px) {
+    .nav_menu{
+        position: fixed;
+        background-color: var(--body-color);
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100%;
+        box-shadow: -1px 0px 4px hsla(360, 64%, 15%, .15);
+        padding: 3rem;
+        transition: .4s;
+    }
+}
+
+.nav_list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.nav_link{
+    color: var(--text-color-light);
+    text-transform: uppercase;
+}
+
+.nav_link:hover{
+    color: var(--text-color);
+}
+
+.nav_close{
+    position: absolute;
+    top: 1.25rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+/*=============== SHOW MENU ==================*/
+.show-menu{
+    right: 0;
+}
+
+/*=============== CHANGE BACKGROUND HEADER ==================*/
+.scroll-header{
+    background-color: var(--body-color);
+    box-shadow: 0px 0px 4px hsla(var(--hue-color), 64%, 15%, .15);
+}
+
+.scroll-header .nav_logo,
+.scroll-header .nav_toggle{
+    color: var(--text-color);
+}
+
+.scroll-header .btn_sign,
+.scroll-header .btn_sign_up{
+    color: var(--first-color);
+}
+
+.scroll-header .btn_sign{
+    border-color: var(--first-color);
+}
+
+/*=============== ACTIVVE LINK ==================*/
+.active-link{
+    position: relative;
+    color: var(--first-color-alt);
+}
+
+/*=============== HOME ==================*/
+.home{
+    z-index: 1;
+}
+.home::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.home_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 83%;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.home_container{
+    position: relative;
+    height: calc(100vh - var(--header-height));
+    align-content: center;
+    row-gap: 3rem;
+    z-index: 3;
+}
+
+.home_data_text,
+.home_data_title{
+    color: #fff;
+}
+
+.home_data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    max-width: 415px;
+}
+
+.home_data_text{
+    display: block;
+    text-align: center;
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1-5);
+}
+
+.home_data_title{
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold);
+    text-align: center;
+    line-height: 55px;
+    margin-bottom: var(--mb-0-5);
+}
+
+/*=============== BUTTON ==================*/
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: .75rem 2.25rem;
+    font-weight: var(--font-semi-bold);
+    border-radius: 40px;
+    transition: .3s;
+}
+
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+.button_flex{
+    display: flex;
+    align-items: center;
+    background-color: #F3F3F3;
+    color: var(--text-color);
+}
+
+.button_link{
+    background-color: transparent;
+    padding: .75rem 3rem;
+    border: 2px solid var(--first-color);
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+}
+.button_link:hover{
+    background-color: var(--first-color);
+    color: #fff;
+}
+
+.button_flex:hover{
+    color: #fff;
+}
+
+.button_send{
+    display: grid;
+    align-items: center;
+    padding: .5rem;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+
+.btn_container{
+    display: flex;
+    margin-left: auto;
+    column-gap: .5rem;
+}
+
+.btn_sign_up,
+.btn_sign{
+    background-color: transparent;
+}
+
+.btn_sign{
+    border: 1px solid #fff;
+}
+
+.btn_sign_up:hover,
+.btn_sign:hover{
+    background-color: transparent;
+}
+
+/*=============== FEATURE ==================*/
+.feature{
+    position: relative;
+    z-index: 4;
+}
+
+.feature_container{
+    margin-top: -15vh;
+    padding-bottom: 2rem;
+}
+
+.feature_data{
+    padding: 1.25rem;
+    background-color: #fff;
+    border-radius: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    min-height: 230px;
+}
+
+.feature_data_title,
+.feature_data_text{
+    color: var(--text-color);
+    text-align: center;
+}
+
+.feature_data_title{
+    font-size: var(--h2-font-size);
+    font-family: var(--title-font);
+}
+
+/*=============== EXPLORE ==================*/
+.explore{
+    padding-bottom: 4rem;
+}
+
+.explore_data{
+    display: grid;
+    justify-items: center;
+}
+
+.explore_data_title{
+    font-size: var(--h1-font-size);
+    font-family: var(--title-font);
+    text-align: center;
+    font-weight: var(--font-bold);
+    margin-top: var(--mb-2-5);
+    margin-bottom: var(--mb-2-5);
+}
+
+.row2,
+.row3{
+    display: none;
+}
+
+.explore_card{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: 20px;
+    margin-bottom: var(--mb-1-25);
+}
+
+.explore_card_content{
+    position: relative;
+    margin-bottom: var(--mb-2);
+}
+
+.explore_card_img{
+    border-radius: 20px;
+}
+
+.explore_content_text{
+    padding: .75rem 1.25rem;
+    font-size: var(--normal-font-size);
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    display: grid;
+    align-items: center;
+    bottom: -1rem;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.explore_card_icon{
+    font-size: 1.5rem;
+    padding: .5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    display: grid;
+    align-items: center;
+    top: .5rem;
+    right: .5rem;
+}
+
+.explore_card_data{
+    display: grid;
+    justify-items: center;
+}
+
+.explore_card_title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.explore_card_text{
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: var(--mb-1);
+}
+
+.for_btn{
+    display: grid;
+    justify-items: center;
+}
+
+/*=============== SUBSCRIBE ==================*/
+.subscription{
+    margin-bottom: 4.5rem;
+}
+
+.subscription_container{
+    background-color: #F8E1DB;
+    padding: 3rem .5rem;
+    border-radius: 20px;
+}
+
+.subscription_data{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.subscription_data_title{
+    font-size: var(--biggest-font-size);
+    text-align: center;
+    font-weight: var(--font-bold);
+    margin-bottom: var(--mb-1);
+}
+
+.subscription_data_text{
+    text-align: center;
+    margin-bottom: var(--mb-0-75);
+}
+
+.subscribe_form{
+    background-color: var(--input-color);
+    padding: .25rem;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    align-items: center;
+    column-gap: .25rem;
+    border-radius: 15px;
+}
+
+.form_icon{
+    font-size: 1.2rem;
+    color: var(--text-color-light);
+}
+
+.subscribe_input{
+    width: 80%;
+    padding-right: .5rem;
+    background-color: var(--input-color);
+    color: var(--text-color);
+}
+
+.subscribe_input::placeholder{
+    color: var(--text-color-light);
+}
+
+.subscription_content{
+    display: grid;
+    justify-items: center;
+}
+
+.visible{
+    display: none;
+}
+
+/*=============== FOOTER ==================*/
+.footer{
+    background-color: var(--footer-color);
+    padding-top: 4.5rem;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.footer_container{
+    grid-template-columns: 1fr;
+}
+
+.footer_wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+}
+
+.footer_sub_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: .5rem;
+}
+
+.footer_data_title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-bold);
+    line-height: 1.5rem;
+    margin-bottom: var(--mb-1);
+}
+
+.footer_data_text{
+    line-height: 1.5rem;
+}
+
+.footer_list{
+    margin-bottom: var(--mb-2);
+}
+
+.footer_link{
+    color: var(--text-color);
+}
+
+.footer_link:hover{
+    color: var(--first-color);
+}
+
+.footer_right{
+    padding-bottom: 2rem;
+}
+
+.footer_copy{
+    text-align: center;
+}
