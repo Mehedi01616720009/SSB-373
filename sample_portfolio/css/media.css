@@ -1,4 +1,11 @@
 /* For small device */
+@media screen and (min-width: 530px){
+    .work_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: .5rem;
+    }
+}
+
 @media screen and (min-width: 660px){
     .home_container{
         display: grid;
@@ -9,7 +16,10 @@
         order: 3;
         display: flex;
         flex-direction: column;
+        row-gap: 1.8rem;
         height: auto;
+        height: max-content;
+        align-self: center;
     }
 
     .carousel_container{
@@ -53,6 +63,40 @@
     .swiper-pagination-bullet:nth-child(4){
         margin-left: 50%;
     }
+
+    .about_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr max-content;
+        align-items: center;
+    }
+
+    .about_data_text{
+        line-height: 1.8rem;
+    }
+
+    .work_container{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr max-content;
+        padding-top: 4.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .work_content{
+        height: calc(100vh - 8.5rem);
+        overflow-x: hidden;
+        display: grid;
+    }
+
+    .work_card{
+        width: 272px;
+        height: 272px;
+    }
+
+    .contact_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr max-content;
+    }
 }
 
 /* For medium device */
@@ -63,15 +107,19 @@
     
     .nav{
         height: calc(var(--header-height) + 1.5rem);
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 2rem;
+        align-items: center;
     }
     
     .nav_link{
-        color: #fff;
+        color: var(--text-color);
         text-transform: initial;
     }
 
     .nav_link:hover{
-        color: #fff;
+        color: var(--title-color);
     }
 
     .nav_dark{
@@ -95,7 +143,7 @@
     }
 
     .change-theme{
-        color: #fff;
+        color: var(--text-color);
     }
 
     .section{
@@ -113,28 +161,97 @@
 }
 
 /* For large device */
+@media screen and (min-width: 830px){
+    .about_img{
+        width: 350px;
+        height: 350px;
+        border: 20px solid var(--border-color);
+    }
+}
+
+@media screen and (min-width: 970px){
+    .carousel_card{
+        width: 320px;
+        height: 320px;
+        border: 20px solid var(--border-color);
+    }
+
+    .work_card{
+        border: 18px solid var(--border-color);
+    }
+
+    .about_img{
+        width: 370px;
+        height: 370px;
+    }
+
+    .work_container{
+        align-content: center;
+    }
+
+    .work_wrapper{
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: .5rem;
+    }
+}
+
 @media screen and (min-width: 1024px){
-    .container{
+    .nav{
         margin-left: auto;
         margin-right: auto;
     }
 
     .home_container{
-        grid-template-rows: 2fr .5fr;
+        height: 100vh;
+        grid-template-columns: 1fr max-content 1fr max-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .home_info{
-        width: 328px;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 2rem;
+    .carousel_card{
+        width: 340px;
+        height: 340px;
     }
 
-    .home_info_title{
-        font-size: var(--normal-font-size);
+    .swiper-button-prev,
+    .swiper-button-next{
+        position: absolute;
+        left: 180%;
+        transform: translateX(-250%);
     }
 
-    .home_info_img{
-        width: 240px;
+    .swiper-button-prev{
+        top: 7%;
+        transform: translateY(-7%);
+        transform: rotate(127deg);
+    }
+
+    .swiper-button-next{
+        top: 90%;
+        transform: translateY(-90%);
+        transform: rotate(53deg);
+    }
+
+    .footer_data{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about_container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .work_container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact_container{
+        display: grid;
+        grid-template-columns: 1.3fr 1.7fr max-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -148,10 +265,5 @@
 @media screen and (min-height: 721px){
     body{
         margin: 0;
-    }
-
-    .home_container,
-    .home_img{
-        height: 100vh;
     }
 }

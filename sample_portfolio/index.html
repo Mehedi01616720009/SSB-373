@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation</title>
+    <title>Hasan- Home</title>
 
     <!--============================= REMIX ICONS ===================================-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -29,18 +29,18 @@
 <!--============================= HEADER ===================================-->
 <header class="header" id="header">
     <nav class="nav container">
-        <a href="#" class="nav_logo">3d'ezy</a>
+        <a href="index.html" class="nav_logo">Hasan</a>
 
         <div class="nav_menu" id="nav-menu">
             <ul class="nav_list">
                 <li class="nav_item">
-                    <a href="#about" class="nav_link">about</a>
+                    <a href="about.html" class="nav_link">about</a>
                 </li>
                 <li class="nav_item">
-                    <a href="#" class="nav_link">work</a>
+                    <a href="work.html" class="nav_link">work</a>
                 </li>
                 <li class="nav_item">
-                    <a href="#" class="nav_link">contact</a>
+                    <a href="contact.html" class="nav_link">contact</a>
                 </li>
             </ul>
 
@@ -68,7 +68,7 @@
                     <path id="Path_5308" data-name="Path 5308" d="M0,0H2301.446V1208.876H0Z" transform="translate(-4202 -1568)" fill="#0b0929"/>
                   </clipPath>
                 </defs>
-                <g id="Mask_Group_37" data-name="Mask Group 37" transform="translate(4202 1568)" opacity="0.05" clip-path="url(#clip-path)" style="isolation: isolate">
+                <g id="Mask_Group_37" data-name="Mask Group 37" transform="translate(4202 1568)" opacity="0.16" clip-path="url(#clip-path)" style="isolation: isolate">
                   <image id="fakurian-design-bMSA5-tLFao-unsplash" width="100%" height="1748" transform="translate(-4202 -1660)" xlink:href="images/Mask%20Group%20-1-image.jpg"/>
                 </g>
               </svg>             
@@ -77,28 +77,28 @@
         <div class="home_container container grid">
             <div class="home_data">
                 <span class="home_data_subtitle">Hello! I'm</span>
-                <h1 class="home_data_title">Mary Cassat</h1>
-                <span class="home_data_subtitle">3D Artists & Visualizer</span>
+                <h1 class="home_data_title">Mehedi Hasan</h1>
+                <span class="home_data_subtitle">A Professional Web Designer</span>
             </div>
 
             <div class="carousel_container container swiper-container">
                 <div class="swiper-wrapper">
-                    <!--============================= DISCOVER 1 ===================================-->
+                    <!--============================= CAROUSEL 1 ===================================-->
                     <div class="carousel_card swiper-slide">
                         <img src="images/carousel_1.jpg" alt="" class="carousel_img">
                     </div>
 
-                   <!--============================= DISCOVER 2 ===================================-->
+                   <!--============================= CAROUSEL 2 ===================================-->
                     <div class="carousel_card swiper-slide">
                         <img src="images/carousel_2.jpg" alt="" class="carousel_img">
                     </div>
 
-                    <!--============================= DISCOVER 3 ===================================-->
+                    <!--============================= CAROUSEL 3 ===================================-->
                     <div class="carousel_card swiper-slide">
                         <img src="images/carousel_3.jpg" alt="" class="carousel_img">
                     </div>
 
-                    <!--============================= DISCOVER 4 ===================================-->
+                    <!--============================= CAROUSEL 4 ===================================-->
                     <div class="carousel_card swiper-slide">
                         <img src="images/carousel_4.jpg" alt="" class="carousel_img">
                     </div>
@@ -127,6 +127,13 @@
         </div>
     </section>
 </main>
+
+<!--============================= FOOTER ===================================-->
+<footer class="footer">
+    <div class="container footer_data">
+        <h2>&copy; 2021 mehedi_hasan</h2>
+    </div>
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
@@ -159,26 +166,6 @@ const navMenu = document.getElementById('nav-menu'),
    }
 
    navLink.forEach(n => n.addEventListener('click', linkAction))
-
-    /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-    const sections = document.querySelectorAll('section[id]')
-
-    function scrollActive(){
-        const scrollY = window.pageYOffset
-
-        sections.forEach(current =>{
-            const sectionHeight = current.offsetHeight
-            const sectionTop = current.offsetTop - 50;
-            sectionId = current.getAttribute('id')
-
-            if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-                document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
-            }else{
-                document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
-            }
-        })
-    }
-    window.addEventListener('scroll', scrollActive)
     
     /*==================== SWIPER ====================*/ 
     var swiper = new Swiper(".carousel_container", {
@@ -186,6 +173,7 @@ const navMenu = document.getElementById('nav-menu'),
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: "auto",
+        autoplay: true,
         loop: true,
         spaceBetween: 62,
         coverflowEffect: {
