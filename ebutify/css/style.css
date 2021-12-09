@@ -589,10 +589,6 @@ input {
     row-gap: 1rem;
 }
 
-.footer_main{
-    grid-template-columns: repeat(3, 1fr);
-}
-
 .footer_main_content img{
     max-width: 70%;
 }
