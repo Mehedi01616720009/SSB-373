@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eButify - signup</title>
+
+    <!--============================= REMIX ICONS ===================================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--============================= GOOGLE FONTS ===================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!--============================= CSS ===================================-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--============================= MEDIA CSS ===================================-->
+    <link rel="stylesheet" href="css/media.css">
+
+    <!--============================= CAPTCHA ===================================-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+<!--============================= HEADER ===================================-->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="index.html" class="nav_logo"><img src="images/ebutify9-01.png" alt=""></a>
+
+        <div class="nav_menu" id="nav-menu">
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a href="#why" class="nav_link active-link">Why eButify</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#price" class="nav_link">Pricing</a>
+                </li>
+                <li class="nav_item">
+                    <a href="blog.html" class="nav_link">Blog</a>
+                </li>
+            </ul>
+
+            <div class="btn_container">
+                <a href="login.html" class="btn_log">Login</a>
+                <a href="signup.html" class="btn_trial">Start Free Trial</a>
+            </div>
+
+            <i class="ri-close-line nav_close" id="nav-close"></i>
+        </div>
+
+        <div class="nav_toggle" id="nav-toggle">
+            <i class="ri-bar-chart-horizontal-line"></i>
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+    <!--== GET STARTED ==-->
+    <div class="client_get">
+        <span class="client_get_number">623</span>
+        <span class="client_get_title">Satisfied Client</span>
+        <a href="#" class="get_started_btn">Get Started</a>
+    </div>
+
+    <!--============================= HOME ===================================-->
+    <section class="home" id="home">    
+        <div class="custom-shape-divider-bottom-1638455351">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="signin_page_container container grid">
+            <div class="signin_data">
+                <h1 class="signin_title">Start your Journey <br>With eButify</h1>
+                <span class="signin_text">
+                    <ul class="signinlist">
+                        <li class="signin_item">
+                            <img src="images/check-mark.png" alt="">
+                            <span>Save hours a day in researching products.</span>
+                        </li>
+                        <li class="signin_item">
+                            <img src="images/check-mark.png" alt="">
+                            <span>Make money by only promoting proven winners</span>
+                        </li>
+                        <li class="signin_item">
+                            <img src="images/check-mark.png" alt="">
+                            <span>Learn in our Dropshipping Success Academy</span>
+                        </li>
+                        <li class="signin_item">
+                            <img src="images/check-mark.png" alt="">
+                            <span>It’s very easy to try! Nothing to lose, and everything to gain!</span>
+                        </li>
+                    </ul>
+                </span>
+            </div>
+
+            <div class="signin_content">
+                <img src="images/Page-1.png" alt="" class="form_img">
+
+                <div class="signin_form_container">
+                    <form action="" class="signin_form grid">
+                        <h2 class="signin_form_title">Complete Your <span>Account</span></h2>
+
+                        <div class="progress">
+                            <div class="fill step"></div>
+                        </div>
+
+                        <span class="signin_form_text">Join thousands of ecom entrepreneurs <br>achieving Dropshipping success</span>
+
+                        <div class="signin_content_item">
+                            <input type="text" id="full_name" placeholder="Enter your full name" required>
+
+                            <input type="email" id="email" placeholder="Enter your email" required>
+
+                            <input type="password" id="sign_pass" placeholder="Enter password" required>
+
+                            <input type="password" id="confirm_pass" placeholder="Confirm password" required>
+                        </div>
+
+                        <div class="g-recaptcha" data-sitekey="6LetbrAdAAAAAHLqPNi6cy-eBH8U7dvC28UxJrHZ"></div>
+
+                        <div class="signin_flex">
+                            <div>
+                                <button type="submit" class="register_btn">Register</button>
+                            </div>
+                            
+                            <div>
+                                <span>Already a member? <a href="login.html" class="login_now">Login Now</a></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============================= FIXED JOURNEY ===================================-->
+    <section class="journey">
+        <div class="journey_container container">
+            <div class="journey_content">
+                <img src="images/footer-cta-animated-v3.png" alt="">
+            </div>
+            
+            <div class="journey_data grid">
+                <h1 class="featured_title">Start your journey today!</h1>
+                <span class="journey_text">Find potential hot selling product in a minute by using eButify product research tool. </span>
+                <a href="signup.html" class="button_journey shake">Start 7 Day Free Trial</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--============================= FOOTER ===================================-->
+<footer class="footer">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="footer_curve"><path fill="#081C2A" fill-opacity="1" d="M0,128L120,106.7C240,85,480,43,720,42.7C960,43,1200,85,1320,106.7L1440,128L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+    
+    <div class="footer_container container">
+        <!--=================== NEWSLETTER ========================-->
+        <div class="footer_newsletter">
+            <div class="footer_newsletter_data">
+                <img src="images/graph_mail.png" alt="">
+                <span>600+ brand owners reading the eButify newsletter</span>
+            </div>
+
+            <div class="footer_newsletter_content">
+                <form action="" class="footer_newsletter_form">
+                    <div class="foot_form_input_container">
+                        <input type="email" placeholder="Enter Your Email Address" required>
+                        <button class="footer_newsletter_btnpc" type="submit" name="subscribe">Subscribe</button>
+                    </div>
+                    <span class="footer_checkbox">
+                        <input type="checkbox" required><span>I agree to receive regular updates from eButify. <a href="">View Privacy Policy here.</a></span>
+                    </span>
+                    <button class="footer_newsletter_btn" type="submit" name="subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!--=================== LINKS ========================-->
+        <div class="footer_main grid">
+            <div class="footer_main_content">
+                <img src="images/ebutify9-01.png" alt="">
+
+                <div class="social_content">
+                    <ul class="social_list">
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-facebook-fill social_icon"></i></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-instagram-fill social_icon"></i></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-linkedin-fill social_icon"></i></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-pinterest-line social_icon"></i></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-twitter-fill social_icon"></i></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-youtube-fill social_icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_contact"><i class="ri-phone-fill"></i><span>+8801722-722690</span></div>
+
+                <div class="copyright">Copyright 2021 eButify Inc. All rights reserved.</div>
+            </div>
+
+            <div class="footer_company">
+                <span>Company</span>
+
+                <ul class="company_list">
+                    <li class="company_item">
+                        <a href="" class="company_link">About Us</a>
+                    </li>
+                    <li class="company_item">
+                        <a href="" class="company_link">Contact Us</a>
+                    </li>
+                    <li class="company_item">
+                        <a href="" class="company_link">Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer_company">
+                <span>Resources</span>
+
+                <ul class="company_list">
+                    <li class="company_item">
+                        <a href="" class="company_link">Privacy Policy</a>
+                    </li>
+                    <li class="company_item">
+                        <a href="" class="company_link">Return Policy</a>
+                    </li>
+                    <li class="company_item">
+                        <a href="" class="company_link">Terms of Service</a>
+                    </li>
+                    <li class="company_item">
+                        <a href="" class="company_link">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--=================== BOOK BUTTON ========================-->
+        <div class="footer_book">
+            <a href="signup.html" class="footer_booking_button">Book Appointment</a>
+
+            <img src="images/shopify-partner.png" alt="">
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+/*=============== SHOW MENU ==================*/
+const navMenu = document.getElementById('nav-menu'),
+   navToggle = document.getElementById('nav-toggle'),
+   navClose = document.getElementById('nav-close')
+
+    /*========= MENU SHOW =========*/
+    if(navToggle){
+        navToggle.addEventListener('click', () =>{
+            navMenu.classList.add('show-menu')
+        })
+    }
+
+    /*========= MENU HIDE =========*/
+    if(navClose){
+        navClose.addEventListener('click', () =>{
+            navMenu.classList.remove('show-menu')
+        })
+    }
+
+    /*========= REMOVE MENU MOBILE =========*/
+    const navLink = document.querySelectorAll('.nav_link')
+
+    function linkAction(){
+            navMenu.classList.remove('show-menu')
+    }
+
+    navLink.forEach(n => n.addEventListener('click', linkAction))
+
+    /*========= CHANGE BACKGROUND HEADER =========*/
+    function scrollHeader(){
+        const header = document.getElementById('header')
+
+        if(this.scrollY >= 100) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+    }
+    window.addEventListener('scroll', scrollHeader)
+</script>
+</body>
+</html>
