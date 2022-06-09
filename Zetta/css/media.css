@@ -254,3 +254,15 @@
 	    padding-left: 14.75rem;
 	}
 }
+
+/* For large device */
+@media screen and (min-height: 721px){
+    body{
+        margin: 0;
+    }
+
+    .banner_container,
+    .banner-image{
+        height: 640px;
+    }
+}
