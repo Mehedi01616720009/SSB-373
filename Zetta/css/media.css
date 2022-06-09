@@ -262,7 +262,8 @@
     }
 
     .banner_container,
-    .banner-image{
+    .banner-image,
+    .banner_overlay{
         height: 640px;
     }
 }
