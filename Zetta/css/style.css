@@ -214,6 +214,7 @@ input{
 }
 .banner{
 	z-index: 0;
+	overflow: hidden;
 }
 .banner-image{
 	position: absolute;
