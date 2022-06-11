@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eButify</title>
+
+    <!--============================= REMIX ICONS ===================================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--============================= SWIPER ===================================-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!--============================= WM BOX POPUP ===================================-->
+    <link rel="stylesheet" href="css/wmbox.css">
+
+    <!--============================= GOOGLE FONTS ===================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!--============================= CSS ===================================-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--============================= MEDIA CSS ===================================-->
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+
+<!--============================= HEADER ===================================-->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="index.html" class="nav_logo"><img src="images/home-logo.png" alt=""></a>
+
+        <div class="nav_menu" id="nav-menu">
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a href="#why" class="nav_link active-link">Why eButify</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#price" class="nav_link">Pricing</a>
+                </li>
+                <li class="nav_item">
+                    <a href="blog.html" class="nav_link">Blog</a>
+                </li>
+            </ul>
+
+            <div class="btn_container">
+                <a href="login.html" class="btn_log"><span>Signup</span><img src="images/signup.png"></a>
+                <a href="signup.html" class="btn_trial"><span>Get Started</span><i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <i class="ri-close-line nav_close" id="nav-close"></i>
+        </div>
+
+        <div class="nav_toggle" id="nav-toggle">
+            <i class="ri-bar-chart-horizontal-line"></i>
+        </div>
+    </nav>
+</header>
+
+<main class="main">    
+    <!--============================= HOME ===================================-->
+    <section class="home" id="home">
+
+        <div class="home_container container grid">
+            <div class="home_data grid">
+                <span>
+                    <h1 class="home_data_title">Looking For Winning Product?</h1>
+                </span>
+                <span class="home_data_text">The ebutify dropshipping winning products research tool helps you find high converting dropshipping winning products to increase your dropshipping sales. It's 100% free, easy to use and finds the perfect products to dropship based on keywords, price, demand and even sales numbers!</span>
+                <ul class="banner_list">
+                    <li class="banner_item"><img src="images/banner_list.png"><span>Milions Of Winning Products</span></li>
+                    <li class="banner_item"><img src="images/banner_list.png"><span>Freequent Update</span></li>
+                    <li class="banner_item"><img src="images/banner_list.png"><span>Easy to Use</span></li>
+                </ul>
+                <div class="home_btn">
+                    <a href="#" class="button wmBox" data-popup="video/video.mp4"><span>Watch Demo</span><img src="images/banner-vid.png" alt=""></a>
+                    <a href="signup.html" class="button button_link"><span>Get Started</span><i class="ri-arrow-right-circle-line"></i></a>
+                </div>
+
+                <div class="banner_rat">
+                    <div class="rating"><i class="ri-star-fill rat_active"></i><i class="ri-star-fill rat_active"></i><i class="ri-star-fill rat_active"></i><i class="ri-star-fill rat_active"></i><i class="ri-star-fill"></i></div>
+                    <span>4.8/5</span>
+                    <div class="banner_rat_data">Based on 311 reviews</div>
+                </div>
+
+                <ul class="banner_list">
+                    <li class="banner_item"><img src="images/banner_ul.png"><span>Get up and running in minutes</span></li>
+                    <li class="banner_item"><img src="images/banner_ul.png"><span>Scale Your Brand Through The Roof</span></li>
+                </ul>
+            </div>
+
+            <div class="home_content">
+                <div class="vid_container">
+                    <video id="video-file" poster="images/poster.png">
+                        <source src="video/Banner.mp4">
+                    </video>
+
+                    <button class="video_button" id="video-button">
+                        <i class="ri-play-fill video_button_icon" id="video-icon"></i>
+                     </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====================== PRICING ============================-->
+    <section class="pricing section" id="price">
+        <div class="pricing_container container grid">
+            <div class="pricing_data">
+                <h2 class="pricing_title">Pricing <br>Select the Perfect <br>Plan for You</h2>
+                <span class="pricing_text_1">
+                    Whether just getting started or with a large email database. Choose the plan that’s right for your business.
+                </span>
+
+                <!--===== PRICING PLAN TAB =====-->
+                <div class="pricing_list">
+                    <div class="pricing_content_features grid">
+                        <ul class="price_tabs">
+                            <li class="price_tab active">Monthly</li>
+                            <li class="price_tab">Yearly</li>
+                        </ul>
+                        <ul class="pricing_content_features_list">
+                            <li class="pricing_content_features_item">
+                                <img src="images/pricing.png" alt="">
+                                <span>∞ Credits Per month</span>
+                            </li>
+
+                            <li class="pricing_content_features_item">
+                                <img src="images/pricing.png" alt="">
+                                <span>Facebook Adspy Tool Access</span>
+                            </li>
+
+                            <li class="pricing_content_features_item">
+                                <img src="images/pricing.png" alt="">
+                                <span>TikTok Adspy Tool Access</span>
+                            </li>
+
+                            <li class="pricing_content_features_item">
+                                <img src="images/pricing.png" alt="">
+                                <span>Latest Ads</span>
+                            
+
+                            <li class="pricing_content_features_item">
+                                <img src="images/pricing.png" alt="">
+                                <span>Basic Filter</span>
+                            </li></li>
+
+                            <li class="pricing_content_features_item">
+                                <img src="images/pricing.png" alt="">
+                                <span>Unlimited Media Downloads</span>
+                            </li>
+
+                            <li class="pricing_content_features_item">
+                                <img src="images/pricing.png" alt="">
+                                <span>Advanced Filters</span>
+                            </li>
+
+                            <li class="pricing_content_features_item">
+                                <img src="images/pricing.png" alt="">
+                                <span>Amazon Tool Access</span>
+                            </li>
+
+                            <li class="pricing_content_features_item">
+                                <img src="images/pricing.png" alt="">
+                                <span>AliExpress Tool Access</span>
+                            </li>
+
+                            <li class="pricing_content_features_item">
+                                <img src="images/pricing.png" alt="">
+                                <span>Shop Spy Tool Access</span>
+                            </li>
+                        </ul>
+
+                        <a href="signup.html" class="button m-auto">Access Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--===== PRICING PLAN 01 =====-->
+            <div class="pricing_content active">
+                <div class="pricing_content_data">
+                    <div class="pricing_badge">Recommanded</div>
+                    <div class="pricing_content_des">$15.00 <span>/month</span> (40% Off)</div>
+                </div>
+
+                <div class="pricing_content_features grid">
+                    <ul class="pricing_content_features_list">
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Live Facebook Ads</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Facebook Winning Ads</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Facebook Audience Research</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Competitor Research</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Ads Copy</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Targeting People</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Hand Written Description</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Download Gif Images</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Download Product Video</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>AliExpress Trend Explorer</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Amazon Trend Explore</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Shopify Store Explore</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Best Ali Supplier Link</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>eBay Product Link</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Amazon Product Link</span>
+                        </li>
+                    </ul>
+
+                    <a href="signup.html" class="button m-auto">Access Now</a>
+                </div>
+            </div>
+
+            <!--===== PRICING PLAN 02 =====-->
+            <div class="pricing_content">
+                <div class="pricing_content_data">
+                    <div class="pricing_badge">Expert</div>
+                    <div class="pricing_content_des">$7.00 <span>/month</span> (70% Off)</div>
+                </div>
+
+                <div class="pricing_content_features grid">
+                    <ul class="pricing_content_features_list">
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Live Facebook Ads</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Facebook Winning Ads</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Facebook Audience Research</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Competitor Research</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Ads Copy</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Targeting People</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Hand Written Description</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Download Gif Images</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Download Product Video</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>AliExpress Trend Explorer</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Amazon Trend Explore</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Shopify Store Explore</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Best Ali Supplier Link</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>eBay Product Link</span>
+                        </li>
+                        <li class="pricing_content_features_item">
+                            <i class="ri-check-fill"></i>
+                            <span>Amazon Product Link</span>
+                        </li>
+                    </ul>
+
+                    <a href="signup.html" class="button m-auto">Access Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====================== RETURN POLICY ============================-->
+    <section class="return_policy section">
+        <div class="return_container container">
+            <div class="return_content">
+                <img src="images/moneyback.png" alt="">
+            </div>
+
+            <div class="return_data">
+                <h2 class="return_title">Our Fair Refund Policy</h2>
+                <span class="return_text">
+                    We guarantee 100% satisfaction with our product research tools & support service. However, if our tools still doesn’t meet your needs, we’ll happily refund 100% of your money within 14 days of your purchase. No questions will be asked. Please note that, we do not refund if the product has been purchased on discount.
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!--====================== FAQ ============================-->
+    <section class="faq_home section" id="skill">
+        <div class="faq_data container grid">
+            <h1 class="faq_data_title">Frequently Asked Questions</h1>
+            <span class="faq_data_subtitle">We know you have some questions in mind, we’ve tried to list the most important ones!</span>
+        </div>
+
+        <div class="faq_content_container container grid">
+            <div>
+                <!--========== FAQ 01 ============-->
+                <div class="faq_content faq_close">
+                    <div class="faq_header">
+                        <div>
+                            <h1 class="faq_title">What services does eButify provides?</h1>
+                        </div>
+
+                        <i class="ri-indeterminate-circle-fill faqicon_close faqicon"></i>
+                        <i class="ri-add-circle-fill faqicon_open faqicon"></i>
+                    </div>
+
+                    <div class="faq_list grid">
+                        <p>
+                            eButify is updating new products on a daily basis - All uploaded products are hand-picked by our top-rated expert product researchers. The products data listed eButify includes Selling Price, Product Cost, Profit, Total sales, Total Order, Google Trends, Google keyword research value, Top 5 private level competitors, Facebook Engagement, Facebook Ads, Product Video, and Facebook Targeting. We put all this Valuable content together for our users so they can find their winning products. Our goal is for you to succeed!
+                        </p>
+                    </div>
+                </div>
+
+                <!--========== FAQ 02 ============-->
+                <div class="faq_content faq_close">
+                    <div class="faq_header">
+                        <div>
+                            <h1 class="faq_title">What services does eButify provides?</h1>
+                        </div>
+
+                        <i class="ri-indeterminate-circle-fill faqicon_close faqicon"></i>
+                        <i class="ri-add-circle-fill faqicon_open faqicon"></i>
+                    </div>
+
+                    <div class="faq_list grid">
+                        <p>
+                            eButify is updating new products on a daily basis - All uploaded products are hand-picked by our top-rated expert product researchers. The products data listed eButify includes Selling Price, Product Cost, Profit, Total sales, Total Order, Google Trends, Google keyword research value, Top 5 private level competitors, Facebook Engagement, Facebook Ads, Product Video, and Facebook Targeting. We put all this Valuable content together for our users so they can find their winning products. Our goal is for you to succeed!
+                        </p>
+                    </div>
+                </div>
+
+                <!--========== FAQ 03 ============-->
+                <div class="faq_content faq_close">
+                    <div class="faq_header">
+                        <div>
+                            <h1 class="faq_title">What services does eButify provides?</h1>
+                        </div>
+
+                        <i class="ri-indeterminate-circle-fill faqicon_close faqicon"></i>
+                        <i class="ri-add-circle-fill faqicon_open faqicon"></i>
+                    </div>
+
+                    <div class="faq_list grid">
+                        <p>
+                            eButify is updating new products on a daily basis - All uploaded products are hand-picked by our top-rated expert product researchers. The products data listed eButify includes Selling Price, Product Cost, Profit, Total sales, Total Order, Google Trends, Google keyword research value, Top 5 private level competitors, Facebook Engagement, Facebook Ads, Product Video, and Facebook Targeting. We put all this Valuable content together for our users so they can find their winning products. Our goal is for you to succeed!
+                        </p>
+                    </div>
+                </div>
+
+                <!--========== FAQ 04 ============-->
+                <div class="faq_content faq_close">
+                    <div class="faq_header">
+                        <div>
+                            <h1 class="faq_title">What services does eButify provides?</h1>
+                        </div>
+
+                        <i class="ri-indeterminate-circle-fill faqicon_close faqicon"></i>
+                        <i class="ri-add-circle-fill faqicon_open faqicon"></i>
+                    </div>
+
+                    <div class="faq_list grid">
+                        <p>
+                            eButify is updating new products on a daily basis - All uploaded products are hand-picked by our top-rated expert product researchers. The products data listed eButify includes Selling Price, Product Cost, Profit, Total sales, Total Order, Google Trends, Google keyword research value, Top 5 private level competitors, Facebook Engagement, Facebook Ads, Product Video, and Facebook Targeting. We put all this Valuable content together for our users so they can find their winning products. Our goal is for you to succeed!
+                        </p>
+                    </div>
+                </div>
+
+                <!--========== FAQ 05 ============-->
+                <div class="faq_content faq_close">
+                    <div class="faq_header">
+                        <div>
+                            <h1 class="faq_title">What services does eButify provides?</h1>
+                        </div>
+
+                        <i class="ri-indeterminate-circle-fill faqicon_close faqicon"></i>
+                        <i class="ri-add-circle-fill faqicon_open faqicon"></i>
+                    </div>
+
+                    <div class="faq_list grid">
+                        <p>
+                            eButify is updating new products on a daily basis - All uploaded products are hand-picked by our top-rated expert product researchers. The products data listed eButify includes Selling Price, Product Cost, Profit, Total sales, Total Order, Google Trends, Google keyword research value, Top 5 private level competitors, Facebook Engagement, Facebook Ads, Product Video, and Facebook Targeting. We put all this Valuable content together for our users so they can find their winning products. Our goal is for you to succeed!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <!--========== FAQ 06 ============-->
+                <div class="faq_content faq_close">
+                    <div class="faq_header">
+                        <div>
+                            <h1 class="faq_title">What services does eButify provides?</h1>
+                        </div>
+
+                        <i class="ri-indeterminate-circle-fill faqicon_close faqicon"></i>
+                        <i class="ri-add-circle-fill faqicon_open faqicon"></i>
+                    </div>
+
+                    <div class="faq_list grid">
+                        <p>
+                            eButify is updating new products on a daily basis - All uploaded products are hand-picked by our top-rated expert product researchers. The products data listed eButify includes Selling Price, Product Cost, Profit, Total sales, Total Order, Google Trends, Google keyword research value, Top 5 private level competitors, Facebook Engagement, Facebook Ads, Product Video, and Facebook Targeting. We put all this Valuable content together for our users so they can find their winning products. Our goal is for you to succeed!
+                        </p>
+                    </div>
+                </div>
+
+                <!--========== FAQ 07 ============-->
+                <div class="faq_content faq_close">
+                    <div class="faq_header">
+                        <div>
+                            <h1 class="faq_title">What services does eButify provides?</h1>
+                        </div>
+
+                        <i class="ri-indeterminate-circle-fill faqicon_close faqicon"></i>
+                        <i class="ri-add-circle-fill faqicon_open faqicon"></i>
+                    </div>
+
+                    <div class="faq_list grid">
+                        <p>
+                            eButify is updating new products on a daily basis - All uploaded products are hand-picked by our top-rated expert product researchers. The products data listed eButify includes Selling Price, Product Cost, Profit, Total sales, Total Order, Google Trends, Google keyword research value, Top 5 private level competitors, Facebook Engagement, Facebook Ads, Product Video, and Facebook Targeting. We put all this Valuable content together for our users so they can find their winning products. Our goal is for you to succeed!
+                        </p>
+                    </div>
+                </div>
+
+                <!--========== FAQ 08 ============-->
+                <div class="faq_content faq_close">
+                    <div class="faq_header">
+                        <div>
+                            <h1 class="faq_title">What services does eButify provides?</h1>
+                        </div>
+
+                        <i class="ri-indeterminate-circle-fill faqicon_close faqicon"></i>
+                        <i class="ri-add-circle-fill faqicon_open faqicon"></i>
+                    </div>
+
+                    <div class="faq_list grid">
+                        <p>
+                            eButify is updating new products on a daily basis - All uploaded products are hand-picked by our top-rated expert product researchers. The products data listed eButify includes Selling Price, Product Cost, Profit, Total sales, Total Order, Google Trends, Google keyword research value, Top 5 private level competitors, Facebook Engagement, Facebook Ads, Product Video, and Facebook Targeting. We put all this Valuable content together for our users so they can find their winning products. Our goal is for you to succeed!
+                        </p>
+                    </div>
+                </div>
+
+                <!--========== FAQ 09 ============-->
+                <div class="faq_content faq_close">
+                    <div class="faq_header">
+                        <div>
+                            <h1 class="faq_title">What services does eButify provides?</h1>
+                        </div>
+
+                        <i class="ri-indeterminate-circle-fill faqicon_close faqicon"></i>
+                        <i class="ri-add-circle-fill faqicon_open faqicon"></i>
+                    </div>
+
+                    <div class="faq_list grid">
+                        <p>
+                            eButify is updating new products on a daily basis - All uploaded products are hand-picked by our top-rated expert product researchers. The products data listed eButify includes Selling Price, Product Cost, Profit, Total sales, Total Order, Google Trends, Google keyword research value, Top 5 private level competitors, Facebook Engagement, Facebook Ads, Product Video, and Facebook Targeting. We put all this Valuable content together for our users so they can find their winning products. Our goal is for you to succeed!
+                        </p>
+                    </div>
+                </div>
+
+                <!--========== FAQ 10 ============-->
+                <div class="faq_content faq_close">
+                    <div class="faq_header">
+                        <div>
+                            <h1 class="faq_title">What services does eButify provides?</h1>
+                        </div>
+
+                        <i class="ri-indeterminate-circle-fill faqicon_close faqicon"></i>
+                        <i class="ri-add-circle-fill faqicon_open faqicon"></i>
+                    </div>
+
+                    <div class="faq_list grid">
+                        <p>
+                            eButify is updating new products on a daily basis - All uploaded products are hand-picked by our top-rated expert product researchers. The products data listed eButify includes Selling Price, Product Cost, Profit, Total sales, Total Order, Google Trends, Google keyword research value, Top 5 private level competitors, Facebook Engagement, Facebook Ads, Product Video, and Facebook Targeting. We put all this Valuable content together for our users so they can find their winning products. Our goal is for you to succeed!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="faq.html" class="button m-auto">See More</a>
+    </section>
+
+    <!--====================== TESTIMONIAL ============================-->
+    <section class="foot_testimoni section">
+        <div class="container grid">
+            <div class="foot_testimoni_subtitle">Testimonials</div>
+            <div class="foot_testimoni_title"><i class="ri-bookmark-line"></i><span>What People Think About Our Tools</span></div>
+        </div>
+
+        <div class="foot_testimoni_container container swiper-container">
+            <div class="foot_testimoni_wrapper container">
+                <div class="swiper-wrapper foot_testimoni_box">
+                    <!--============== CAROUSEL 1 ===================-->
+                    <div class="foot_testimoni_card swiper-slide">
+                        <div class="foot_testimoni_content m-auto">
+                            <img src="images/07.jpg" alt="" class="carousel_img">
+                        </div>
+                        
+                        <div class="foot_testimoni_data">
+                            <div class="foot_testimoni_des">For a free contact form, this works great. They even include form submission data in the admin, which</div>
+                            <div class="foot_testimoni_rat">
+                                <div class="rating"><i class="ri-star-fill rat_active"></i><i class="ri-star-fill rat_active"></i><i class="ri-star-fill rat_active"></i><i class="ri-star-fill rat_active"></i><i class="ri-star-fill"></i></div>
+                                <span>4.8/5</span>
+                            </div>
+                            <div class="foot_testimoni_author">Rezaul Islam</div>
+                            <div class="foot_testimoni_position">CEO & Founder @ eButify Inc.</div>
+                        </div>
+                    </div>
+
+                    <!--============== CAROUSEL 2 ===================-->
+                    <div class="foot_testimoni_card swiper-slide">
+                        <div class="foot_testimoni_content m-auto">
+                            <img src="images/02.jpg" alt="" class="carousel_img">
+                        </div>
+                        
+                        <div class="foot_testimoni_data">
+                            <div class="foot_testimoni_des">For a free contact form, this works great. They even include form submission data in the admin, which</div>
+                            <div class="foot_testimoni_rat">
+                                <div class="rating"><i class="ri-star-fill rat_active"></i><i class="ri-star-fill rat_active"></i><i class="ri-star-fill rat_active"></i><i class="ri-star-fill rat_active"></i><i class="ri-star-fill"></i></div>
+                                <span>4.8/5</span>
+                            </div>
+                            <div class="foot_testimoni_author">MD Suman Mia</div>
+                            <div class="foot_testimoni_position">Product Manager</div>
+                        </div>
+                    </div>
+
+                    <!--============== CAROUSEL 3 ===================-->
+                    <div class="foot_testimoni_card swiper-slide">
+                        <div class="foot_testimoni_content m-auto">
+                            <img src="images/11.jpg" alt="" class="carousel_img">
+                        </div>
+                        
+                        <div class="foot_testimoni_data">
+                            <div class="foot_testimoni_des">For a free contact form, this works great. They even include form submission data in the admin, which</div>
+                            <div class="foot_testimoni_rat">
+                                <div class="rating"><i class="ri-star-fill rat_active"></i><i class="ri-star-fill rat_active"></i><i class="ri-star-fill rat_active"></i><i class="ri-star-fill rat_active"></i><i class="ri-star-fill"></i></div>
+                                <span>4.8/5</span>
+                            </div>
+                            <div class="foot_testimoni_author">Sheikh Noyon</div>
+                            <div class="foot_testimoni_position">Head Of Development</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="images/quote.png" class="foot_testimoni_quote">
+
+            <div class="foot_testimoni_nav">
+                <div class="foot-testimoni-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--====================== RESOURCE ============================-->
+    <section class="section resource">
+        <div class="resource_container container">
+            <div class="resource_title">Useful Resources</div>
+            <div class="resource_subtitle">Create a loyal fan base with the value you provide</div>
+
+            <div class="resource_card_wrapper grid">
+                <!--======= RESOURCE CARD 01 ==========-->
+                <div class="resource_card">
+                    <div class="resource_card_content">
+                        <img src="images/How-To-Build-An-Email-List-For-Affiliate-Marketing 1.png">
+                    </div>
+
+                    <div class="resource_card_data">
+                        <div class="resource_card_title">Lorem ipsum dolor sit amet, consectetur adip..</div>
+
+                        <div class="resource_card_meta">
+                            <div class="resource_card_author">
+                                <div class="resource_card_author_img">
+                                    <img src="images/07.jpg">
+                                </div>
+
+                                <div class="resource_card_author_data">
+                                    <div class="resource_card_author_title">Rezaul Islam</div>
+                                    <div class="resource_card_author_date">20-05-2022</div>
+                                </div>
+                            </div>
+
+                            <div class="resource_card_mata_data">
+                                <i class="ri-time-line"></i>
+                                <span>15 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--======= RESOURCE CARD 02 ==========-->
+                <div class="resource_card">
+                    <div class="resource_card_content">
+                        <img src="images/How-To-Build-An-Email-List-For-Affiliate-Marketing 1.png">
+                    </div>
+
+                    <div class="resource_card_data">
+                        <div class="resource_card_title">Lorem ipsum dolor sit amet, consectetur adip..</div>
+
+                        <div class="resource_card_meta">
+                            <div class="resource_card_author">
+                                <div class="resource_card_author_img">
+                                    <img src="images/07.jpg">
+                                </div>
+
+                                <div class="resource_card_author_data">
+                                    <div class="resource_card_author_title">Rezaul Islam</div>
+                                    <div class="resource_card_author_date">20-05-2022</div>
+                                </div>
+                            </div>
+
+                            <div class="resource_card_mata_data">
+                                <i class="ri-time-line"></i>
+                                <span>15 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--======= RESOURCE CARD 03 ==========-->
+                <div class="resource_card">
+                    <div class="resource_card_content">
+                        <img src="images/How-To-Build-An-Email-List-For-Affiliate-Marketing 1.png">
+                    </div>
+
+                    <div class="resource_card_data">
+                        <div class="resource_card_title">Lorem ipsum dolor sit amet, consectetur adip..</div>
+
+                        <div class="resource_card_meta">
+                            <div class="resource_card_author">
+                                <div class="resource_card_author_img">
+                                    <img src="images/07.jpg">
+                                </div>
+
+                                <div class="resource_card_author_data">
+                                    <div class="resource_card_author_title">Rezaul Islam</div>
+                                    <div class="resource_card_author_date">20-05-2022</div>
+                                </div>
+                            </div>
+
+                            <div class="resource_card_mata_data">
+                                <i class="ri-time-line"></i>
+                                <span>15 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--============================= FOOTER ===================================-->
+<footer class="footer">    
+    <div class="footer_container container">
+        <!--=================== NEWSLETTER ========================-->
+        <div class="footer_newsletter">
+            <div class="footer_newsletter_data">
+                <img src="images/graph_mail.png" alt="">
+                <span>600+ brand owners reading the eButify newsletter</span>
+            </div>
+
+            <div class="footer_newsletter_content">
+                <form action="" class="footer_newsletter_form">
+                    <div class="foot_form_input_container">
+                        <input type="email" placeholder="Enter Your Email Address" required>
+                        <button class="footer_newsletter_btnpc" type="submit" name="subscribe">Subscribe</button>
+                    </div>
+                    <span class="footer_checkbox">
+                        <input type="checkbox" required><span>I agree to receive regular updates from eButify. <a href="">View Privacy Policy here.</a></span>
+                    </span>
+                    <button class="footer_newsletter_btn" type="submit" name="subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!--=================== LINKS ========================-->
+        <div class="footer_main grid">
+            <div class="footer_main_content">
+                <img src="images/ebutify9-01.png" alt="">
+
+                <div class="social_content">
+                    <ul class="social_list">
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-facebook-fill social_icon"></i></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-instagram-fill social_icon"></i></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-linkedin-fill social_icon"></i></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-pinterest-line social_icon"></i></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-twitter-fill social_icon"></i></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-youtube-fill social_icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_contact"><i class="ri-phone-fill"></i><span>+8801722-722690</span></div>
+
+                <div class="copyright">Copyright 2021 eButify Inc. All rights reserved.</div>
+            </div>
+
+            <div class="footer_company">
+                <span>Company</span>
+
+                <ul class="company_list">
+                    <li class="company_item">
+                        <a href="about_ebutify.html" class="company_link">About Us</a>
+                    </li>
+                    <li class="company_item">
+                        <a href="contact_us.html" class="company_link">Contact Us</a>
+                    </li>
+                    <li class="company_item">
+                        <a href="affiliate.html" class="company_link">Affiliate</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer_company">
+                <span>Resources</span>
+
+                <ul class="company_list">
+                    <li class="company_item">
+                        <a href="" class="company_link">Privacy Policy</a>
+                    </li>
+                    <li class="company_item">
+                        <a href="" class="company_link">Return Policy</a>
+                    </li>
+                    <li class="company_item">
+                        <a href="" class="company_link">Terms of Service</a>
+                    </li>
+                    <li class="company_item">
+                        <a href="faq.html" class="company_link">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--=================== BOOK BUTTON ========================-->
+        <div class="footer_book">
+            <a href="signup.html" class="footer_booking_button">Book Appointment</a>
+
+            <img src="images/shopify-partner.png" alt="">
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/wmBox.js"></script>
+<script src="js/jquery-anchorScroll.js"></script>
+<script>
+/*=============== SHOW MENU ==================*/
+const navMenu = document.getElementById('nav-menu'),
+   navToggle = document.getElementById('nav-toggle'),
+   navClose = document.getElementById('nav-close')
+
+    /*========= MENU SHOW =========*/
+    if(navToggle){
+        navToggle.addEventListener('click', () =>{
+            navMenu.classList.add('show-menu')
+        })
+    }
+
+    /*========= MENU HIDE =========*/
+    if(navClose){
+        navClose.addEventListener('click', () =>{
+            navMenu.classList.remove('show-menu')
+        })
+    }
+
+    /*========= REMOVE MENU MOBILE =========*/
+    const navLink = document.querySelectorAll('.nav_link')
+
+    function linkAction(){
+            navMenu.classList.remove('show-menu')
+    }
+
+    navLink.forEach(n => n.addEventListener('click', linkAction))
+
+    /*========= CHANGE BACKGROUND HEADER =========*/
+    function scrollHeader(){
+        const header = document.getElementById('header')
+
+        if(this.scrollY >= 100) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+    }
+    window.addEventListener('scroll', scrollHeader)
+
+    /*=============== VIDEO ==================*/
+    const videoFile = document.getElementById('video-file'),
+        videoButton = document.getElementById('video-button'),
+        videoIcon = document.getElementById('video-icon')
+
+    function playPause(){
+        if(videoFile.paused){
+            // Play
+            videoFile.play()
+
+            // Change Icon
+            videoIcon.classList.add('ri-pause-line')
+            videoIcon.classList.remove('ri-play-fill')
+        } else{
+            // Pause
+            videoFile.pause()
+
+            // Change Icon
+            videoIcon.classList.remove('ri-pause-line')
+            videoIcon.classList.add('ri-play-fill')
+        }
+    }
+
+    videoButton.addEventListener('click', playPause)
+
+    function finalVideo(){
+        //Ends Icon
+        videoIcon.classList.remove('ri-pause-fill')
+        videoIcon.classList.add('ri-play-fill')
+    }
+
+    videoFile.addEventListener('ended', finalVideo)
+
+    /*=============== VIDEO POPUP ==================*/
+    // wmbox.js
+    $.wmBox();
+
+    // anchorScroll
+    var anchorScroll = $(document).AnchorScroll({
+        speed: 1000
+    });
+
+    /*=============== PRICING TAB ==================*/
+    const tabs = document.querySelectorAll(".price_tabs li");
+    const contents = document.querySelectorAll(".pricing_content");
+
+    tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+
+            tabs.forEach(tab => tab.classList.remove("active"));
+
+            tab.classList.add("active");
+
+            contents.forEach((c) => c.classList.remove("active"));
+
+            contents[index].classList.add("active");
+        })
+    })
+
+    /*=============== FAQ ==================*/
+    const faqContent = document.getElementsByClassName('faq_content'),
+            faqHeader = document.querySelectorAll('.faq_header')
+
+    function toggleSkills(){
+        let itemClass = this.parentNode.className
+
+        for(i = 0; i < faqContent.length; i++){
+            faqContent[i].className = 'faq_content faq_close'
+        }
+        if(itemClass === 'faq_content faq_close'){
+            this.parentNode.className = 'faq_content faq_open'
+        }
+    }
+
+    faqHeader.forEach((el) =>{
+        el.addEventListener('click', toggleSkills)
+    })
+
+    /*=============== FOOTER TESTIMONIAL ==================*/
+    var swiper = new Swiper(".foot_testimoni_wrapper", {
+        loop: true,
+        spaceBetween: 32,
+        autoplay: true,
+        pagination: {
+          el: ".foot-testimoni-pagination",
+          clickable: true,
+        },
+    });
+
+</script>
+</body>
+</html>
