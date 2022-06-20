@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eButify - contact</title>
+
+    <!--============================= REMIX ICONS ===================================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=================== PHONE NUMBER VARIFICATION ====================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+
+    <!--============================= GOOGLE FONTS ===================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!--============================= CSS ===================================-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--============================= MEDIA CSS ===================================-->
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+
+<!--============================= HEADER ===================================-->
+<header class="header" id="header">
+    <nav class="nav container">
+        <a href="index.html" class="nav_logo"><img src="images/home-logo.png" alt=""></a>
+
+        <div class="nav_menu" id="nav-menu">
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a href="#why" class="nav_link active-link">Why eButify</a>
+                </li>
+                <li class="nav_item">
+                    <a href="adspy.html" class="nav_link">Features</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#price" class="nav_link">Pricing</a>
+                </li>
+                <li class="nav_item">
+                    <a href="blog.html" class="nav_link">Blog</a>
+                </li>
+            </ul>
+
+            <div class="btn_container">
+                <a href="login.html" class="btn_log"><span>Signup</span><i class="ri-user-fill list_circle list_secondary list_font"></i></a>
+                <a href="signup.html" class="btn_trial"><span>Get Started</span><i class="ri-arrow-right-line"></i></a>
+            </div>
+
+            <i class="ri-close-line nav_close" id="nav-close"></i>
+        </div>
+
+        <div class="nav_toggle" id="nav-toggle">
+            <i class="ri-bar-chart-horizontal-line"></i>
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+    <!--============================= HOME ===================================-->
+    <section class="home" id="home">
+        <div class="contact_container container">
+            <div class="home_data">
+                <h1 class="contact_title">Contact Us</h1>
+                <p class="contact_des m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales elit sit amet accumsan vulputate.</p>
+            </div>
+
+            <div class="contact_content">
+                <div class="contact_form_container grid">
+                    <form action="" class="contact_form grid" onsubmit="process(event)">
+                        <div class="contact_form_wrapper grid">
+                            <div class="contact_input_container">
+                                <label for="full_name">Your Name <span>*</span></label>
+                                <input type="text" placeholder="Enter your full name" id="full_name" required>
+                            </div>
+
+                            <div class="contact_input_wrapper grid">
+                                <div class="contact_input_container">
+                                    <label for="email_address">Your Email <span>*</span></label>
+                                    <input type="email" placeholder="Enter your valid email" id="email_address" required>
+                                </div>
+        
+                                <div class="contact_input_container">
+                                    <label for="phone_no">Your Phone <span>*</span></label>
+                                    <input type="tel" placeholder="" id="phone_no" required>
+                                    <div class="alert-info" style="display: none;"></div>
+                                    <!-- <select class=""></select> -->
+                                </div>
+                            </div>
+
+                            <div class="input_wrapper">
+                                <div class="contact_input_container">
+                                    <label for="feedback_msg">Your Message <span>*</span></label>
+                                    <textarea name="" id="feedback_msg" cols="30" rows="10" placeholder="Start writing your message here..." required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="contact_btn_wrapper">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+
+                    <div class="contact_sidebar grid">
+                        <div class="contact_ques">
+                            <p class="ques_alt">Do You</p>
+                            <p class="ques_title">Have Any Question?</p>
+                            <a href="" class="button m-auto shake">Check Answer</a>
+                        </div>
+
+                        <div class="contact_ques">
+                            <p class="ques_title">Check Our Products</p>
+                            <ul class="ques_list">
+                                <a href="" class="banner_item ques_color"><i class="ri-check-fill list_circle"></i><span>Facebook Adspy Tool</span></a>
+                                <a href="" class="banner_item ques_color"><i class="ri-check-fill list_circle"></i><span>TikTok Adspy Tool</span></a>
+                                <a href="" class="banner_item ques_color"><i class="ri-check-fill list_circle"></i><span>Amazon Explore Tool</span></a>
+                                <a href="" class="banner_item ques_color"><i class="ri-check-fill list_circle"></i><span>AliExpress Explore Tool</span></a>
+                                <a href="" class="banner_item ques_color"><i class="ri-check-fill list_circle"></i><span>Shopify Store Explore Tool</span></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--============================= FOOTER ===================================-->
+<footer class="footer section">    
+    <div class="footer_container container">
+        <!--=================== NEWSLETTER ========================-->
+        <div class="footer_newsletter">
+            <div class="footer_newsletter_data">
+                <img src="images/graph_mail.png" alt="">
+                <span>600+ brand owners reading the eButify newsletter</span>
+            </div>
+
+            <div class="footer_newsletter_content">
+                <form action="" class="footer_newsletter_form">
+                    <div class="foot_form_input_container">
+                        <input type="email" placeholder="Enter Your Email Address" required>
+                        <button class="footer_newsletter_btnpc" type="submit" name="subscribe">Subscribe</button>
+                    </div>
+                    <span class="footer_checkbox">
+                        <input type="checkbox" required><span>I agree to receive regular updates from eButify. <a href="">View Privacy Policy here.</a></span>
+                    </span>
+                    <button class="footer_newsletter_btn" type="submit" name="subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!--=================== LINKS ========================-->
+        <div class="footer_main grid">
+            <div class="footer_main_content">
+                <img src="images/ebutify9-01.png" alt="">
+
+                <div class="social_content">
+                    <ul class="social_list">
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-facebook-fill social_icon"></i></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-instagram-fill social_icon"></i></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-linkedin-fill social_icon"></i></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-pinterest-line social_icon"></i></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-twitter-fill social_icon"></i></a>
+                        </li>
+                        <li class="social_item">
+                            <a href="" class="social_link"><i class="ri-youtube-fill social_icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_contact"><i class="ri-phone-fill"></i><span>+8801722-722690</span></div>
+
+                <div class="copyright">Copyright 2021 eButify Inc. All rights reserved.</div>
+            </div>
+
+            <div class="footer_sub_content grid">
+                <div class="footer_company">
+                    <span>Company</span>
+
+                    <ul class="company_list">
+                        <li class="company_item">
+                            <a href="about_ebutify.html" class="company_link">About Us</a>
+                        </li>
+                        <li class="company_item">
+                            <a href="contact_us.html" class="company_link">Contact Us</a>
+                        </li>
+                        <li class="company_item">
+                            <a href="affiliate.html" class="company_link">Affiliate</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_company">
+                    <span>Resources</span>
+
+                    <ul class="company_list">
+                        <li class="company_item">
+                            <a href="" class="company_link">Privacy Policy</a>
+                        </li>
+                        <li class="company_item">
+                            <a href="" class="company_link">Return Policy</a>
+                        </li>
+                        <li class="company_item">
+                            <a href="" class="company_link">Terms of Service</a>
+                        </li>
+                        <li class="company_item">
+                            <a href="faq.html" class="company_link">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--=================== BOOK BUTTON ========================-->
+        <div class="footer_book">
+            <a href="signup.html" class="footer_booking_button">Book Appointment</a>
+
+            <img src="images/shopify-partner.png" alt="">
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--=================== PHONE NUMBER VARIFICATION ====================-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script>
+/*=============== SHOW MENU ==================*/
+const navMenu = document.getElementById('nav-menu'),
+   navToggle = document.getElementById('nav-toggle'),
+   navClose = document.getElementById('nav-close')
+
+    /*========= MENU SHOW =========*/
+   if(navToggle){
+       navToggle.addEventListener('click', () =>{
+           navMenu.classList.add('show-menu')
+       })
+   }
+
+   /*========= MENU HIDE =========*/
+   if(navClose){
+       navClose.addEventListener('click', () =>{
+           navMenu.classList.remove('show-menu')
+       })
+   }
+
+   /*========= REMOVE MENU MOBILE =========*/
+   const navLink = document.querySelectorAll('.nav_link')
+
+   function linkAction(){
+        navMenu.classList.remove('show-menu')
+   }
+
+   navLink.forEach(n => n.addEventListener('click', linkAction))
+
+   /*========= CHANGE BACKGROUND HEADER =========*/
+   function scrollHeader(){
+       const header = document.getElementById('header')
+
+       if(this.scrollY >= 100) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+   }
+   window.addEventListener('scroll', scrollHeader)
+
+    /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+    const sections = document.querySelectorAll('section[id]')
+
+    function scrollActive(){
+        const scrollY = window.pageYOffset
+
+        sections.forEach(current =>{
+            const sectionHeight = current.offsetHeight
+            const sectionTop = current.offsetTop - 50;
+            sectionId = current.getAttribute('id')
+
+            if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+                document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
+            }else{
+                document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
+            }
+        })
+    }
+    window.addEventListener('scroll', scrollActive)
+
+    /*==================== PHONE NUMBER VARIFICATION ====================*/
+    const phoneInputField = document.querySelector("#phone_no");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+
+    const info = document.querySelector(".alert-info");
+
+    function process(event) {
+     event.preventDefault();
+
+     const phoneNumber = phoneInput.getNumber();
+
+     info.style.display = "";
+     info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
+    }
+</script>
+</body>
+</html>
