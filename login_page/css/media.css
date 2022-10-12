@@ -1,0 +1,29 @@
+/* large device 1024px */
+@media screen and (min-width: 1000px) {
+	body {
+		overflow: hidden;
+	}
+
+	.login_container {
+		width: 968px;
+		margin-left: auto;
+		margin-right: auto;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+
+	.bg_img {
+		display: block;
+	    position: absolute;
+	    top: -10%;
+	    right: -12%;
+	    z-index: -1;
+	}
+}
+
+/* large device 1300px */
+@media screen and (min-width: 1300px) {
+	.login_container {
+		grid-template-columns: 1fr 1.25fr;
+	}
+}
