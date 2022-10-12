@@ -219,6 +219,7 @@ input[type="checkbox"]:checked:after {
 
 .login_form_footer a {
 	font-size: var(--small-font-size);
+	color: var(--title-color);
 	text-transform: capitalize;
 }
 
