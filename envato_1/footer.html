@@ -1,0 +1,82 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!--======= SWIPER JS ========-->
+<script src="js/swiper-bundle.min.js"></script>
+
+<script>
+    
+/*========== BANNER POPUP ===========*/
+const popContent = document.getElementById('modal')
+const popToggle = document.getElementById('popup-toggle')
+const popClose = document.getElementById('close-button')
+const blurContent = document.getElementById('banner')
+
+if(popToggle){
+    popToggle.addEventListener('click', () =>{
+        popContent.classList.add('pop-active')
+    })
+}
+
+if(popClose){
+    popClose.addEventListener('click', () =>{
+        popContent.classList.remove('pop-active')
+    })
+}
+
+/*========== CHANGE THE TAB =============*/
+const currentLocation = location.href;
+const menuItem = document.querySelectorAll('a');
+const menuLength = menuItem.length
+for (let i = 0; i < menuLength; i++) {
+    if (menuItem[i].href === currentLocation) {
+        menuItem[i].classList.remove('active');
+        menuItem[i].classList.add('active');
+    }
+}
+
+/*========== PORTFOLIO FILTER ===========*/
+$(document).ready(function(){
+    $('.portfolio_item').click(function(){
+        const value = $(this).attr('data-filter');
+
+        if(value == 'all'){
+            $('.portfolio_content_box').show('1000');
+        }
+        else{
+            $('.portfolio_content_box').not('.'+value).hide('1000');
+            $('.portfolio_content_box').filter('.'+value).show('1000');
+        }
+    })
+
+    $('.portfolio_item').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    })
+})
+
+/*========== BLOG CAROUSEL ===========*/
+var swiper = new Swiper(".blog_banner", {
+    speed: 600,
+    spaceBetween: 15,
+    slidesPerView: 1,
+    effect: "fade",
+    loop: true,
+    navigation: {
+      nextEl: ".blog_slide_nav_next",
+      prevEl: ".blog_slide_nav_prev",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 25,
+        },
+        1024: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+        },
+    },
+});
+    
+</script>
+
+</body>
+</html>
